@@ -1,11 +1,16 @@
 # 地铁 LCD 报站屏模拟 · 迁安1号线
 
+> ### ⚙️ 本项目由 AI 生成
+> **代码、文档、界面文案和报站语音全部由 AI 产出**（代码/文档：DeepSeek；语音：微软 edge-tts 语音合成），
+> 由人工给出设计方向、反复调整并逐项验证。详细说明见文末 [声明](#声明)。
+
 > 用 **C++ / Qt 6** 手绘的一个「地铁车门上方横条屏」模拟——就是国内地铁里那种 4:1 的超宽信息带：
 > 闪灯图、下一站、开门侧、站台布局、滚动公告、车厢拥挤度/空调，还带**中英双语报站语音**。
 > 线路、站名、换乘、出入口全部写在 `assets/line.json` 里，**改配置就能换线路，不用碰 C++ 代码**。
 
 ![行驶中](docs/img/03-running.png)
 
+![AI 生成](https://img.shields.io/badge/AI--generated-by%20DeepSeek-8A2BE2)
 ![C++17](https://img.shields.io/badge/C%2B%2B-17-00599C)
 ![Qt](https://img.shields.io/badge/Qt-6.8-41CD52)
 ![CMake](https://img.shields.io/badge/CMake-%E2%89%A5%203.21-064F8C)
@@ -14,6 +19,7 @@
 
 > **说明**：`迁安1号线` 是**虚构线路**（迁安目前没有地铁），站名取自河北迁安的地名，纯属演示。
 > 界面里的线路色、报站话术参考了国内地铁的通用做法，但**与任何真实运营方无关**。
+> 此程序使用deepseek制作
 
 ---
 
@@ -310,7 +316,9 @@ metro-lcd.exe --step 2 --shot out.png --prime 6      # 导出 1600×400 PNG 后�
 
 ## 声明
 
-- **本项目代码由 AI 辅助生成**（DeepSeek），随后经人工设计与反复调整、逐项验证。
+> ⚙️ **本项目由 AI 生成**（除下方注明的第三方组件外，代码、文档、界面文案、演示语音均为 AI 产出）。
+
+- **代码与文档由 AI 辅助生成**（DeepSeek，`deepseek-v4-flash`），随后经人工设计方向、反复调整与逐项验证。
 - **第三方组件**：
   - **Qt 6** —— LGPLv3 授权；程序为**动态链接**（发布二进制时请随包附 LGPL 许可文本，并允许使用者替换 Qt 库）。<https://www.qt.io/licensing>
   - `vc_redist.x64.exe`、`d3dcompiler_47.dll` —— Microsoft 可再发行组件
