@@ -25,7 +25,7 @@ struct Station
 };
 
 // 地铁车门上方横条 LCD 模拟（4:1，虚拟画布 1600x400）
-//   3 站折返：黄台站 - 望江站 - 云溪站
+//   线路数据在 assets/line.json（默认：迁安1号线，16 站）；读不到就用内置的三站演示线路
 //   ← → 翻页（每站 4 屏），↑ 向右 / ↓ 向左
 class TrainScreen : public QWidget
 {
@@ -121,7 +121,7 @@ private:
     const Station &directionTerminal() const;
     int  showIndex() const;            // 这一屏显示哪个站（前两屏=本站，后两屏=下一站）
     const Station &showStation() const;
-    // 这一站是不是【当前行驶方向】的终点站（始发站不箿）
+    // 这一站是不是【当前行驶方向】的终点站（始发站不算）
     bool atDirectionTerminus() const;
     double carTarget() const;
     QString statusText() const;
