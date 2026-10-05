@@ -1,0 +1,32 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": { "major": 3, "minor": 21, "patch": 0 },
+  "configurePresets": [
+    {
+      "name": "vs2022",
+      "displayName": "VS 2022 + Qt 6.8.3  <-- F5 用这个",
+      "description": "Visual Studio 打开本文件夹后会直接读到这个预设，按 F5 即可编译运行",
+      "generator": "Visual Studio 17 2022",
+      "architecture": { "value": "x64", "strategy": "external" },
+      "binaryDir": "${sourceDir}/build-vs",
+      "cacheVariables": {
+        "CMAKE_PREFIX_PATH": "D:/Qt/6.8.3/msvc2022_64"
+      }
+    },
+    {
+      "name": "ninja-release",
+      "displayName": "Ninja Release（命令行快编）",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_PREFIX_PATH": "D:/Qt/6.8.3/msvc2022_64"
+      }
+    }
+  ],
+  "buildPresets": [
+    { "name": "vs2022", "configurePreset": "vs2022", "configuration": "Release" },
+    { "name": "vs2022-debug", "configurePreset": "vs2022", "configuration": "Debug" },
+    { "name": "ninja-release", "configurePreset": "ninja-release" }
+  ]
+}

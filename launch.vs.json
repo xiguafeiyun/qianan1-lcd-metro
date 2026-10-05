@@ -1,0 +1,40 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "metro-lcd.exe",
+      "name": "metro-lcd.exe（正常启动 · 停在站上、门开着）"
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "metro-lcd.exe",
+      "name": "metro-lcd.exe（第1屏 停稳·开门）",
+      "args": [ "--step", "0" ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "metro-lcd.exe",
+      "name": "metro-lcd.exe（第2屏 车门即将关闭）",
+      "args": [ "--step", "1" ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "metro-lcd.exe",
+      "name": "metro-lcd.exe（第3屏 行驶中）",
+      "args": [ "--step", "2" ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "metro-lcd.exe",
+      "name": "metro-lcd.exe（第4屏 即将到站）",
+      "args": [ "--step", "3" ]
+    }
+  ]
+}

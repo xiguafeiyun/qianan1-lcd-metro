@@ -1,0 +1,13 @@
+# ---- 构建产物（不要进仓库）----
+/build/
+/build-vs/
+/dist/
+/.vs/
+
+# ---- Python 缓存 ----
+__pycache__/
+*.pyc
+
+# ---- VS / CMake 用户本地配置 ----
+CMakeUserPresets.json
+*.user

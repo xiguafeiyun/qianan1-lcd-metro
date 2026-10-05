@@ -1,0 +1,217 @@
+{
+  "_说明": [
+    "这就是你的线路！改这个文件就能设计，不用碰 C++ 代码。",
+    "lineName / lineNameEn / badge：顶栏显示的线路名和线路号",
+    "stations：从上到下按顺序排列，第 1 个和最后 1 个自动视为【终点站】",
+    "  name      中文站名",
+    "  en        英文站名（公告栏中英交替会用）",
+    "  door      哪侧开门：left 左侧 / right 右侧",
+    "  transfers 换乘线路，没有就写 []",
+    "  exits     两个出入口，左右站台各一个",
+    "改完存盘，程序重新跑一下（F5）就生效。",
+    "闪灯图上：即将关门/行驶中显示完整线路图；即将到站收窄到 6 个站，两头有渐隐线表示还有站。",
+    "enSay：英语播报里这个名字怎么念（拼音部分写成中文，英文词保留）。不写就用 en。"
+  ],
+  "lineName": "迁安1号线",
+  "lineNameEn": "QIAN'AN LINE 1",
+  "badge": "1",
+  "stations": [
+    {
+      "name": "滦河站",
+      "en": "Luanhe Railway Station",
+      "enSay": "滦河 Railway Station",
+      "door": "right",
+      "transfers": [],
+      "exits": [
+        "A",
+        "B"
+      ],
+      "rail": true,
+      "_rail说明": "国铁车站，闪灯图上会挂小铁路标志"
+    },
+    {
+      "name": "邵家营村",
+      "en": "Shaojiaying",
+      "enSay": "邵家营村",
+      "door": "right",
+      "transfers": [],
+      "exits": [
+        "C",
+        "D"
+      ],
+      "rail": false
+    },
+    {
+      "name": "大杨官营村",
+      "en": "Dayangguanying",
+      "enSay": "大杨官营村",
+      "door": "left",
+      "transfers": [],
+      "exits": [
+        "A",
+        "B"
+      ],
+      "rail": false
+    },
+    {
+      "name": "迁安站",
+      "en": "Qian'an Railway Station",
+      "enSay": "迁安 Railway Station",
+      "door": "left",
+      "transfers": [],
+      "exits": [
+        "C",
+        "D"
+      ],
+      "rail": true,
+      "_rail说明": "国铁车站，闪灯图上会挂小铁路标志"
+    },
+    {
+      "name": "赵店子镇",
+      "en": "Zhaodianzi",
+      "enSay": "赵店子镇",
+      "door": "left",
+      "transfers": [],
+      "exits": [
+        "A",
+        "B"
+      ],
+      "rail": false
+    },
+    {
+      "name": "交通枢纽",
+      "en": "Transport Hub",
+      "door": "left",
+      "transfers": [
+        "2号线"
+      ],
+      "exits": [
+        "C",
+        "D"
+      ],
+      "rail": false
+    },
+    {
+      "name": "天元谷度假区",
+      "en": "Tianyuangu Resort",
+      "enSay": "天元谷 Resort",
+      "door": "left",
+      "transfers": [],
+      "exits": [
+        "A",
+        "B"
+      ],
+      "rail": false
+    },
+    {
+      "name": "天洋城",
+      "en": "Tianyangcheng",
+      "enSay": "天洋城",
+      "door": "left",
+      "transfers": [],
+      "exits": [
+        "C",
+        "D"
+      ],
+      "rail": false
+    },
+    {
+      "name": "迁安一中",
+      "en": "Qian'an No.1 MS",
+      "enSay": "迁安 No.1 MS",
+      "door": "left",
+      "transfers": [
+        "3号线"
+      ],
+      "exits": [
+        "A",
+        "B"
+      ],
+      "rail": false
+    },
+    {
+      "name": "邮政局",
+      "en": "Post Office",
+      "door": "left",
+      "transfers": [],
+      "exits": [
+        "C",
+        "D"
+      ],
+      "rail": false
+    },
+    {
+      "name": "光彩幼儿园",
+      "en": "Guangcai KG",
+      "enSay": "光彩 KG",
+      "door": "left",
+      "transfers": [],
+      "exits": [
+        "A",
+        "B"
+      ],
+      "rail": false
+    },
+    {
+      "name": "三里河公园",
+      "en": "Sanlihe Park",
+      "enSay": "三里河 Park",
+      "door": "right",
+      "transfers": [
+        "2号线"
+      ],
+      "exits": [
+        "C",
+        "D"
+      ],
+      "rail": false
+    },
+    {
+      "name": "弘毅学校",
+      "en": "Hongyi School",
+      "enSay": "弘毅 School",
+      "door": "left",
+      "transfers": [],
+      "exits": [
+        "A",
+        "B"
+      ],
+      "rail": false
+    },
+    {
+      "name": "万嘉商贸",
+      "en": "Wanjia Mall",
+      "enSay": "万嘉 Mall",
+      "door": "left",
+      "transfers": [],
+      "exits": [
+        "C",
+        "D"
+      ],
+      "rail": false
+    },
+    {
+      "name": "烈士陵园",
+      "en": "Martyrs' Cemetery",
+      "door": "left",
+      "transfers": [],
+      "exits": [
+        "A",
+        "B"
+      ],
+      "rail": false
+    },
+    {
+      "name": "扣庄中学",
+      "en": "Kouzhuang MS",
+      "enSay": "扣庄 MS",
+      "door": "left",
+      "transfers": [],
+      "exits": [
+        "C",
+        "D"
+      ],
+      "rail": false
+    }
+  ]
+}
